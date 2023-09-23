@@ -35,7 +35,7 @@ public class ReservationServiceImpl implements ReservationService {
 
         User user = userResponse.get();
 
-        List<Spot> spots = parkingLot.getSpots();
+        List<Spot> spots = parkingLot.getSpotList();
 
         SpotType reqSpotType = SpotType.OTHERS;
         if(numberOfWheels <= 2)reqSpotType = SpotType.TWO_WHEELER;
